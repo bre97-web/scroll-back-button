@@ -11,4 +11,8 @@ export default defineConfig({
     }
   })],
   base: '/scroll-back-to-top',
+  build: {
+    outDir: '../docs',
+    emptyOutDir: true,
+  }
 })
