@@ -1,5 +1,5 @@
 import { customElement } from "lit/decorators.js";
-import Button from "./lib/ScrollBackToTop";
+import Button from "./lib/ScrollBackButton";
 
 
 @customElement('scroll-back-button')
