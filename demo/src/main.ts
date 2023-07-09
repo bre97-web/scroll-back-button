@@ -6,7 +6,8 @@ import './assets/index.css'
 /**
  * scroll-back-button
  */
-import './lib/index'
+// import './lib/index'
+import './lib/index.js'
 
 import 'material-symbols'
 import '@material/web/icon/icon'

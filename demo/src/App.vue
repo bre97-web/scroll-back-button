@@ -16,14 +16,14 @@
               <md-tonal-button>Feel it</md-tonal-button>
             </scroll-back-button>
             <pre><code>{{
-  `<scroll-back-button>
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button>
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
 
             <pre><code>{{
-  `<scroll-back-button direction="top">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button direction="top">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
           </section>
 
           <section>
@@ -32,14 +32,14 @@
               <md-tonal-button>Feel it</md-tonal-button>
             </scroll-back-button>
             <pre><code>{{
-  `<scroll-back-button direction="bottom">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button direction="bottom">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
 
             <pre><code>{{
-  `<scroll-back-button direction="bot">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button direction="bot">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
           </section>
 
           <section>
@@ -53,14 +53,14 @@
               </scroll-back-button>
             </div>
             <pre><code>{{
-  `<scroll-back-button speed="1">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button speed="1">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
 
             <pre><code>{{
-  `<scroll-back-button speed="8">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button speed="8">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
           </section>
 
           <section>
@@ -74,14 +74,14 @@
               </scroll-back-button>
             </div>
             <pre><code>{{
-  `<scroll-back-button step="0.5">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button step="0.5">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
 
             <pre><code>{{
-  `<scroll-back-button step="16">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button step="16">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
           </section>
 
           <section>
@@ -98,9 +98,9 @@
               </div>
             </div>
             <pre><code>{{
-  `<scroll-back-button parent="#boxOne">
-    <button>Go Top</button>
-  </scroll-back-button>`}}</code></pre>
+`<scroll-back-button parent="#boxOne">
+  <button>Go Top</button>
+</scroll-back-button>`}}</code></pre>
           </section>
 
         </div>

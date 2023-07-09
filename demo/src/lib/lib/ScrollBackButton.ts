@@ -87,6 +87,8 @@ export default class ScrollBackButton extends LitElement {
             this.parentElement = document.documentElement
         } else {
             this.parentElement = document.querySelector(this.parent)
+            console.log(this.parentElement);
+            
         }
     }
 
