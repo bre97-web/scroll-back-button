@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Dark Switch</title>
+  <script type="module" src='./src/index.ts'></script>
+  <link rel="stylesheet" href='./output.css' />
+</head>
+
+<body class="container bg-white px-2 md:px-0 h-[3000px]">
+
+  <header class="text-center pt-28">
+    <h1 class="font-black text-4xl">scroll-back-to-top</h1>
+  </header>
+
+  <nav class="w-full mx-auto">
+    <div class="fixed top-0 right-0 w-full h-32 flex items-center justify-center">
+      <scroll-back-to-top>
+        <button class="relative bg-transparent text-black w-32 h-32 font-bold rounded-full z-10 pointer-events-none">
+          Click me to TOP
+          <button class="absolute left-0 top-0 bg-transparent hover:bg-blue-500 opacity-0 hover:opacity-100 hover:text-white hover:blur-3xl w-32 h-32 rounded-full z-0"></button>
+        </button>
+      </scroll-back-to-top>
+    </div>
+
+    <div class="fixed bottom-0 right-0 w-full h-32 flex items-center justify-center">
+      <scroll-back-to-top direction="end">
+        <button class="relative bg-transparent text-black w-32 h-32 font-bold rounded-full z-10 pointer-events-none">
+          Click me to BOTTOM
+          <button class="absolute left-0 top-0 bg-transparent hover:bg-blue-500 opacity-0 hover:opacity-100 hover:text-white hover:blur-3xl w-32 h-32 rounded-full z-0"></button>
+        </button>
+      </scroll-back-to-top>
+    </div>
+  </nav>
+</body>
+
+</html>

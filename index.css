@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * {
+        transition: all 0.15s;
+    }
+    .card {
+        @apply rounded-xl w-full h-full p-4 mx-auto bg-black/5 dark:bg-white/20;
+    }
+    .card h1 {
+        @apply font-bold;
+    }
+    .card h1 + p {
+        @apply text-black/75 dark:text-white/75 font-normal;
+    }
+}

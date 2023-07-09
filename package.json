@@ -1,0 +1,40 @@
+{
+  "name": "scroll-back-to-top",
+  "version": "0.0.1",
+  "author": "bre97-npm",
+  "description": "A lit web component.",
+  "keywords": [
+    "switch",
+    "dark"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bre97-web/scroll-back-to-top"
+  },
+  "license": "MIT",
+  "homepage": "https://bre97-web.github.io/scroll-back-to-top",
+  "bugs": "https://github.com/bre97-web/scroll-back-to-top/issues",
+  "type": "module",
+  "scripts": {
+    "css": "npx tailwindcss -i ./index.css -o ./output.css --watch",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@material/web": "^1.0.0-pre.12",
+    "lit": "^2.7.6",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.1.1"
+  },
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
