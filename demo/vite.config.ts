@@ -10,7 +10,7 @@ export default defineConfig({
       }
     }
   })],
-  base: '/scroll-back-to-top',
+  base: '/scroll-back-button',
   build: {
     outDir: '../docs',
     emptyOutDir: true,

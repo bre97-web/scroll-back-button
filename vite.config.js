@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-  base: '/light-dark-switch',
+  base: '/scroll-back-button',
   build: {
     minify: false,
     sourcemap: true,

@@ -78,7 +78,7 @@ export default class ScrollBackButton extends LitElement {
      * 默认值为document.documentElement
      * 在connectedCallback中设置默认值
      */
-    @state() parentElement
+    @state() parentElement: any
 
     connectedCallback() {
         super.connectedCallback()

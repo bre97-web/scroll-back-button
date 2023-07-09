@@ -2,10 +2,12 @@
   "name": "scroll-back-button",
   "version": "0.0.1",
   "author": "bre97-npm",
-  "description": "A lit web component.",
+  "description": "A lit web component. A Web Component for any framework, this component does not provide any style and structure. Please provide the structure inside the scroll-back-button tag. Provides the function of scrolling up and down to the bottom.",
   "keywords": [
-    "switch",
-    "dark"
+    "button",
+    "go-top",
+    "scroll",
+    "scroll-back"
   ],
   "repository": {
     "type": "git",
