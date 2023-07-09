@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+    * {
+        transition: all 0.15s;
+    }
+
+    pre {
+        @apply border rounded-md px-4 py-2 my-2;
+    }
+
+    :root {
+        --md-elevated-button-container-shape: 0.375rem;
+    }
+}
