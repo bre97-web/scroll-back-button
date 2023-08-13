@@ -18,18 +18,18 @@ npm i scroll-back-button
 
 import from **index.html**
 ```html
-<script src="/scroll-back-button/dist/index.js"></script>
+<script src="./node_modules/scroll-back-button/scroll-back-button.js"></script>
 ```
 
 or import from main.**js**
 ```js
-import 'scroll-back-button/dist/index.js'
+import '/scroll-back-button/scroll-back-button.js'
 ```
 
 (**Recommmand**)
 or import from main.**ts**
 ```ts
-import 'scroll-back-button'
+import '/scroll-back-button/scroll-back-button'
 ```
 
 ## Usage
@@ -37,6 +37,10 @@ import 'scroll-back-button'
 Using it is as easy as using html, You can go to this site to see [examples](https://bre97-web.github.io/scroll-back-button/)
 
 ```html
+<div id="boxOne" class="h-32 overflow-y-scroll">
+    <div class="h-[2000px]"></div>
+</div>
+
 <scroll-back-button direction="start" speed="1" step="0.5" parent="#boxOne">
     <button>Go Top</button>
 </scroll-back-button>
