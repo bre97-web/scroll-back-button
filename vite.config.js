@@ -1,19 +1,11 @@
 // vite.config.js
-import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   base: '/scroll-back-button',
+  root: './demo/',
   build: {
-    minify: false,
-    sourcemap: true,
-    lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      formats: ['es'],
-      fileName: 'index',
-      
-    },
-  },
-  plugins: [dts()]
+      outDir: '../docs',
+      emptyOutDir: true,
+  }
 });

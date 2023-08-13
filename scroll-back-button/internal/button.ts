@@ -1,9 +1,9 @@
 import { LitElement, TemplateResult, css, html } from "lit";
 import { property, state } from "lit/decorators.js";
 
-export default class ScrollBackButton extends LitElement {
+export default class Button extends LitElement {
 
-    public async scroll() {
+    public override async scroll() {
         if (['start', 'top'].includes(this.direction)) {
             this.backToTop()
         } else if (['end', 'bottom', 'bot'].includes(this.direction)) {
@@ -78,9 +78,9 @@ export default class ScrollBackButton extends LitElement {
      * 默认值为document.documentElement
      * 在connectedCallback中设置默认值
      */
-    @state() parentElement: any
+    @state() override parentElement: any
 
-    connectedCallback() {
+    override connectedCallback() {
         super.connectedCallback()
         
         if(this.parent === 'auto') {
@@ -93,7 +93,7 @@ export default class ScrollBackButton extends LitElement {
     }
 
 
-    static styles = css`
+    static override styles = css`
         .box {
             position: relative;
             max-width: max-content;
