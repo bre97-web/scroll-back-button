@@ -33,16 +33,16 @@
   <script>
     console.log('Lit Local Server is started.');
   </script>
-  <script type="module" crossorigin src="/scroll-back-button/assets/index-f63ef051.js"></script>
-  <link rel="stylesheet" href="/scroll-back-button/assets/index-5f036a3c.css">
+  <script type="module" crossorigin src="/scroll-button/assets/index-b53efc65.js"></script>
+  <link rel="stylesheet" href="/scroll-button/assets/index-34b56961.css">
 </head>
 
 <body>
   <div class="space-y-32">
     <header class="container max-w-screen-lg mx-auto mt-32 px-4">
-      <h1 class="font-black text-4xl">scroll-back-button</h1>
+      <h1 class="font-black text-4xl">scroll-button</h1>
       <p class="font-base">Does not provide any style and structure, you need to handwrite the structure in
-        scroll-back-button. Specify the direction and parent attributes to start scrolling!</p>
+        scroll-button. Specify the direction and parent attributes to start scrolling!</p>
     </header>
 
     <main class="container max-w-screen-lg mx-auto px-4">
@@ -51,44 +51,44 @@
       <div class="space-y-16">
         <section>
           <h2>Back to Top</h2>
-          <scroll-back-button direction="top">
+          <scroll-button direction="top">
             <md-filled-tonal-button>Feel it</md-filled-tonal-button>
-          </scroll-back-button>
+          </scroll-button>
           <pre>
             <code>
-&lt;scroll-back-button&gt;
+&lt;scroll-button&gt;
   &lt;button&gt;Feel it&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
           </code>
         </pre>
 
           <pre>
             <code>
-&lt;scroll-back-button direction="top"&gt;
+&lt;scroll-button direction="top"&gt;
   &lt;button&gt;Feel it&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
         </section>
 
         <section>
           <h2>Back to Bottom</h2>
-          <scroll-back-button direction="bottom">
+          <scroll-button direction="bottom">
             <md-filled-tonal-button>Feel it</md-filled-tonal-button>
-          </scroll-back-button>
+          </scroll-button>
           <pre>
             <code>
-&lt;scroll-back-button direction="bottom"&gt;
+&lt;scroll-button direction="bottom"&gt;
   &lt;button&gt;Feel it&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
 
           <pre>
             <code>
-&lt;scroll-back-button direction="bot"&gt;
+&lt;scroll-button direction="bot"&gt;
   &lt;button&gt;Feel it&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
         </section>
@@ -96,26 +96,26 @@
         <section>
           <h2>Scroll Speed</h2>
           <div class="flex gap-2">
-            <scroll-back-button direction="top">
+            <scroll-button direction="top">
               <md-filled-tonal-button>x1</md-filled-tonal-button>
-            </scroll-back-button>
-            <scroll-back-button direction="top" speed="8">
+            </scroll-button>
+            <scroll-button direction="top" speed="8">
               <md-filled-tonal-button>x8</md-filled-tonal-button>
-            </scroll-back-button>
+            </scroll-button>
           </div>
           <pre>
             <code>
-&lt;scroll-back-button speed="1"&gt;
+&lt;scroll-button speed="1"&gt;
   &lt;button&gt;x1&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
 
           <pre>
             <code>
-&lt;scroll-back-button speed="8"&gt;
+&lt;scroll-button speed="8"&gt;
   &lt;button&gt;x8&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
         </section>
@@ -123,24 +123,24 @@
         <section>
           <h2>Scroll Step</h2>
           <div class="flex gap-2">
-            <scroll-back-button direction="top" step="0.5">
+            <scroll-button direction="top" step="0.5">
               <md-filled-tonal-button>/0.5</md-filled-tonal-button>
-            </scroll-back-button>
-            <scroll-back-button direction="top" step="16">
+            </scroll-button>
+            <scroll-button direction="top" step="16">
               <md-filled-tonal-button>/16</md-filled-tonal-button>
-            </scroll-back-button>
+            </scroll-button>
           </div>
-          <pre><code>&lt;scroll-back-button step="0.5"&gt;
+          <pre><code>&lt;scroll-button step="0.5"&gt;
   &lt;button&gt;/0.5&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
 
           <pre>
             <code>
-&lt;scroll-back-button step="16"&gt;
+&lt;scroll-button step="16"&gt;
   &lt;button&gt;/16&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
         </section>
@@ -148,34 +148,36 @@
         <section>
           <h2>Scroll in box</h2>
           <div class="flex flex-col gap-2">
-            <scroll-back-button parent="#boxOne" direction="top">
+            <scroll-button parent="#boxOne" direction="top">
               <md-filled-tonal-button>Feel it(TOP)</md-filled-tonal-button>
-            </scroll-back-button>
-            <scroll-back-button parent="#boxOne" direction="bot">
+            </scroll-button>
+            <scroll-button parent="#boxOne" direction="bot">
               <md-filled-tonal-button>Feel it(BOTTOM)</md-filled-tonal-button>
-            </scroll-back-button>
+            </scroll-button>
             <div id="boxOne" class="h-32 border overflow-y-scroll">
               <div class="h-[2000px] bg-gradient-to-t from-blue-50 to-red-900"></div>
             </div>
           </div>
           <pre>
             <code>
-&lt;div id="boxOne" style="height: 2000px; overflow: auto;"&gt;
+&lt;div style="height: 100px; overflow: auto;"&gt;
+  &lt;div id="boxOne" style="height: 2000px;"&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
             </code>
           </pre>
           <pre>
             <code>
-&lt;scroll-back-button parent="#boxOne"&gt;
+&lt;scroll-button parent="#boxOne"&gt;
   &lt;button&gt;Feel it(TOP)&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
           <pre>
             <code>
-&lt;scroll-back-button parent="#boxOne" direction="bot"&gt;
+&lt;scroll-button parent="#boxOne" direction="bot"&gt;
   &lt;button&gt;Feel it(BOTTOM)&lt;/button&gt;
-&lt;/scroll-back-button&gt;
+&lt;/scroll-button&gt;
             </code>
           </pre>
         </section>
@@ -185,21 +187,21 @@
 
     <nav class="px-4">
       <div class="fixed top-0 w-full py-2">
-        <scroll-back-button direction="top">
+        <scroll-button direction="top">
           <md-elevated-button>
             <md-icon slot="icon">arrow_upward</md-icon>
             Scroll to TOP
           </md-elevated-button>
-        </scroll-back-button>
+        </scroll-button>
       </div>
 
       <div class="fixed bottom-0 w-full py-2">
-        <scroll-back-button direction="bot">
+        <scroll-button direction="bot">
           <md-elevated-button>
             <md-icon slot="icon">arrow_downward</md-icon>
             Scroll to BOTTOM
           </md-elevated-button>
-        </scroll-back-button>
+        </scroll-button>
       </div>
 
     </nav>
@@ -207,7 +209,7 @@
     <footer class="bg-purple-50 px-4 py-2 h-full w-full pb-32">
       <div class="container max-w-screen-lg mx-auto">
         <h1 class="font-bold text-2xl">Thanks</h1>
-        <p class="font-base">scroll-back-button</p>
+        <p class="font-base">scroll-button</p>
       </div>
     </footer>
     </main>

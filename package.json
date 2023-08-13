@@ -1,21 +1,22 @@
 {
-  "name": "scroll-back-button",
+  "name": "scroll-button",
   "version": "0.0.1",
   "author": "bre97-web",
-  "description": "A lit web component. A Web Component for any framework, this component does not provide any style and structure. Please provide the structure inside the scroll-back-button tag. Provides the function of scrolling up and down to the bottom.",
+  "description": "A lit web component. A Web Component for any framework, this component does not provide any style and structure. Please provide the structure inside the scroll-button tag. Provides the function of scrolling up and down to the bottom.",
   "keywords": [
     "button",
     "go-top",
     "scroll",
-    "scroll-back"
+    "scroll-back",
+    "web component"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bre97-web/scroll-back-button.git"
+    "url": "https://github.com/bre97-web/scroll-button.git"
   },
   "license": "MIT",
-  "homepage": "https://bre97-web.github.io/scroll-back-button",
-  "bugs": "https://github.com/bre97-web/scroll-back-button/issues",
+  "homepage": "https://bre97-web.github.io/scroll-button",
+  "bugs": "https://github.com/bre97-web/scroll-button/issues",
   "type": "module",
   "scripts": {
     "build": "wireit",
@@ -62,7 +63,7 @@
       ]
     },
     "build:ts": {
-      "command": "node css-to-ts.js && tsc --pretty",
+      "command": "node ./config/css-to-ts.js && tsc --pretty",
       "files": [
         "tsconfig.json",
         "**/*.ts",
