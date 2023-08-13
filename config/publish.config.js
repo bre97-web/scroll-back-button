@@ -2,7 +2,7 @@
 /**
  * Write your name of repo.
  */
-const packageName = 'scroll-back-button'
+const packageName = 'scroll-button'
 
 export default {
     

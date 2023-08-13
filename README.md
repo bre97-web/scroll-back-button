@@ -1,49 +1,49 @@
-# scroll-back-button
+# scroll-button
 
-A lit web component. A Web Component for any framework, this component does not provide any style and structure. Please provide the structure inside the scroll-back-button tag. Provides the function of scrolling up and down to the bottom.
+A lit web component. A Web Component for any framework, this component does not provide any style and structure. Please provide the structure inside the scroll-button tag. Provides the function of scrolling up and down to the bottom.
 
 **It's Web Component, work with any framkework, like react, vue, non-framkework.**
 
-See [examples](https://bre97-web.github.io/scroll-back-button/).
+See [examples](https://bre97-web.github.io/scroll-button/).
 
 # Quick Start
 
 ## Install
 
 ```
-npm i scroll-back-button
+npm i scroll-button
 ```
 
 ## Import
 
 import from **index.html**
 ```html
-<script src="./node_modules/scroll-back-button/scroll-back-button.js"></script>
+<script src="./node_modules/scroll-button/scroll-button.js"></script>
 ```
 
 or import from main.**js**
 ```js
-import '/scroll-back-button/scroll-back-button.js'
+import '/scroll-button/scroll-button.js'
 ```
 
 (**Recommmand**)
 or import from main.**ts**
 ```ts
-import '/scroll-back-button/scroll-back-button'
+import '/scroll-button/scroll-button'
 ```
 
 ## Usage
 
-Using it is as easy as using html, You can go to this site to see [examples](https://bre97-web.github.io/scroll-back-button/)
+Using it is as easy as using html, You can go to this site to see [examples](https://bre97-web.github.io/scroll-button/)
 
 ```html
 <div id="boxOne" class="h-32 overflow-y-scroll">
     <div class="h-[2000px]"></div>
 </div>
 
-<scroll-back-button direction="start" speed="1" step="0.5" parent="#boxOne">
+<scroll-button direction="start" speed="1" step="0.5" parent="#boxOne">
     <button>Go Top</button>
-</scroll-back-button>
+</scroll-button>
 ```
 
 # Documents

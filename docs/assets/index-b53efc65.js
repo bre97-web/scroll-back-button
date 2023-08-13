@@ -52,7 +52,7 @@
             position: relative;
             max-width: max-content;
         }
-    `;h([m({type:String})],T.prototype,"direction",void 0);h([m({type:Number})],T.prototype,"speed",void 0);h([m({type:Number})],T.prototype,"step",void 0);h([m({type:String})],T.prototype,"parent",void 0);h([at()],T.prototype,"parentElement",void 0);let Et=class extends T{};Et=h([S("scroll-back-button")],Et);/**
+    `;h([m({type:String})],T.prototype,"direction",void 0);h([m({type:Number})],T.prototype,"speed",void 0);h([m({type:Number})],T.prototype,"step",void 0);h([m({type:String})],T.prototype,"parent",void 0);h([at()],T.prototype,"parentElement",void 0);let Et=class extends T{};Et=h([S("scroll-button")],Et);/**
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: Apache-2.0
