@@ -18,23 +18,78 @@
   "bugs": "https://github.com/bre97-web/scroll-back-button/issues",
   "type": "module",
   "scripts": {
+    "build": "wireit",
+    "build:ts": "wireit",
+    "build:css-to-ts": "wireit",
+    "build:demo": "tsc && vite build",
+    "css": "node ./config/css-to-ts.js",
+    "ts": "tsc --pretty",
+    "publish:npm": "node ./config/publish-to-npm.js && npm run format:json",
+    "publish:gpr": "node ./config/publish-to-gpr.js && npm run format:json",
+    "format:json": "npx prettier --write package.json",
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "test": "exit 0"
   },
+  "type": "module",
+  "files": [
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts",
+    "!config/**",
+    "!docs/**",
+    "!vite.config.ts",
+    "!demo/**",
+    "!**/test/**",
+    "!**/*_test.*",
+    "!.wireit/**"
+  ],
   "dependencies": {
-    "@material/web": "^1.0.0-pre.12",
-    "lit": "^2.7.6"
+    "lit": "^2.8.0",
+    "tslib": "^2.6.1"
   },
   "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.3.9",
-    "vite-plugin-dts": "^3.1.1"
+    "glob": "^10.3.3",
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "wireit": "^0.10.0"
   },
-  "module": "./dist/index.js",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ]
+  "wireit": {
+    "build": {
+      "dependencies": [
+        "build:ts"
+      ]
+    },
+    "build:ts": {
+      "command": "node css-to-ts.js && tsc --pretty",
+      "files": [
+        "tsconfig.json",
+        "**/*.ts",
+        "!config/**",
+        "!**.config.ts",
+        "!**.config.js",
+        "!**/*.d.ts",
+        "!**/*.css.ts"
+      ],
+      "output": [
+        ".tsbuildinfo",
+        "**/*.js",
+        "**/*.js.map",
+        "**/*.d.ts",
+        "!config/",
+        "!types/"
+      ],
+      "clean": "if-file-deleted"
+    },
+    "build:css-to-ts": {
+      "command": "node css-to-ts.js",
+      "files": [
+        "css-to-ts.js"
+      ],
+      "output": [
+        "**/*.css.ts"
+      ],
+      "clean": "if-file-deleted"
+    }
+  }
 }
