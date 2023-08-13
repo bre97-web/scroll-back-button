@@ -30,7 +30,6 @@
     "dev": "vite",
     "test": "exit 0"
   },
-  "type": "module",
   "files": [
     "**/*.js",
     "**/*.js.map",
@@ -48,6 +47,7 @@
     "tslib": "^2.6.1"
   },
   "devDependencies": {
+    "@material/web": "^1.0.0-pre.15",
     "glob": "^10.3.3",
     "prettier": "^3.0.1",
     "typescript": "^5.1.6",
